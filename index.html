@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <style>
+  body{
+    
+    
+  }
+    h2{
+      text-align: center;
+      
+    }
+    #us{
+      position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+    }
+    #ps{
+      position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+    }
+    #op{
+      position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+    }
+    h4{
+      color: red;
+      position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+    }
+  </style>
+<h2>Login to Continue </h2>
+<input type="text" id="us" placeholder="Enter Username ">
+<input type="text" placeholder="Enter Password " id="ps">
+<button type="submit" id="op">Enter The Mod</button>
+<h4 id="ok"></h4>
+</body>
+<script>
+  let x = document.getElementById('us')
+  let y = document.getElementById('ps')
+  document.getElementById('op').onclick = e=>{
+    if(x.value == 'Myg' && y.value == 'Yasir'){
+      window.open('https://mygyt11.github.io/Ooop/')
+    }
+    else{
+    let u =document.getElementById('ok').innerHTML = 'wrong username or password '
+    }
+  }
+</script>
+</html>
